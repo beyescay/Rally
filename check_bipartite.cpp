@@ -1,3 +1,5 @@
+// Check if a given graph is bipartite or not
+
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -52,11 +54,11 @@ int main() {
     adj[x - 1].push_back(y - 1);
     adj[y - 1].push_back(x - 1);
   }
-  std::cout << IsBipartite(adj);
+
   if (IsBipartite(adj)) {
-    //std::cout << "Graph is bipartite" << std::endl;
+    std::cout << "Graph is bipartite" << std::endl;
   }
   else {
-    //std::cout << "Graph is not bipartite" << std::endl;
+    std::cout << "Graph is not bipartite" << std::endl;
   }
 }
